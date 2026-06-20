@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY // STEAM - CS:GO</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">MY // STEAM</div>
+        <nav class="nav">
+            <a href="#" class="nav-link active">Магазин</a>
+            <a href="#" class="nav-link">Библиотека</a>
+            <a href="#" class="nav-link">Профиль</a>
+        </nav>
+        <div class="user-info">
+            <span class="balance" id="balance">₴ 50000</span>
+            <div class="avatar">USER</div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar-left">
+            <h3>Категории</h3>
+            <ul class="category-list">
+                <li data-category="all" class="category-item active">Все</li>
+                <li data-category="weapons" class="category-item">Оружие</li>
+                <li data-category="knives" class="category-item">Ножи</li>
+                <li data-category="gloves" class="category-item">Перчатки</li>
+                <li data-category="agents" class="category-item">Агенты</li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="market-header">
+                <h1>Магазин предметов CS:GO</h1>
+                <input type="text" id="search" placeholder="Поиск скинов..." class="search-input">
+            </div>
+            
+            <div class="items-grid" id="items-grid">
+                <!-- Items loaded by JS -->
+            </div>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="sidebar-right">
+            <h3>Друзья онлайн</h3>
+            <div class="friends-list" id="friends-list">
+                <!-- Friends loaded by JS -->
+            </div>
+        </aside>
+    </div>
+
+    <!-- Notification -->
+    <div id="notification" class="notification"></div>
+
+    <script src="/main.js"></script>
+</body>
+</html>
