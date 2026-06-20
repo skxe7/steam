@@ -11,50 +11,35 @@
         <div class="logo">MY // STEAM</div>
         <nav class="nav">
             <a href="#" class="nav-link active">Магазин</a>
-            <a href="#" class="nav-link">Библиотека</a>
+            <a href="#" onclick="showInventory()" class="nav-link">Инвентарь</a>
             <a href="#" class="nav-link">Профиль</a>
         </nav>
         <div class="user-info">
-            <span class="balance" id="balance">₴ 50000</span>
+            <span class="balance" id="balance">₴ 65000</span>
             <div class="avatar">USER</div>
         </div>
     </header>
 
     <div class="container">
-        <!-- Left Sidebar -->
         <aside class="sidebar-left">
             <h3>Категории</h3>
-            <ul class="category-list">
+            <ul class="category-list" id="category-list">
                 <li data-category="all" class="category-item active">Все</li>
                 <li data-category="weapons" class="category-item">Оружие</li>
                 <li data-category="knives" class="category-item">Ножи</li>
                 <li data-category="gloves" class="category-item">Перчатки</li>
-                <li data-category="agents" class="category-item">Агенты</li>
             </ul>
         </aside>
 
-        <!-- Main Content -->
-        <main class="main-content">
+        <main class="main-content" id="main-content">
             <div class="market-header">
-                <h1>Магазин предметов CS:GO</h1>
-                <input type="text" id="search" placeholder="Поиск скинов..." class="search-input">
+                <h1>Магазин CS:GO</h1>
+                <input type="text" id="search" placeholder="Поиск по названию..." class="search-input">
             </div>
-            
-            <div class="items-grid" id="items-grid">
-                <!-- Items loaded by JS -->
-            </div>
+            <div class="items-grid" id="items-grid"></div>
         </main>
-
-        <!-- Right Sidebar -->
-        <aside class="sidebar-right">
-            <h3>Друзья онлайн</h3>
-            <div class="friends-list" id="friends-list">
-                <!-- Friends loaded by JS -->
-            </div>
-        </aside>
     </div>
 
-    <!-- Notification -->
     <div id="notification" class="notification"></div>
 
     <script src="/main.js"></script>
